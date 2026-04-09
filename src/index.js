@@ -4,6 +4,7 @@ const { Telegraf } = require('telegraf');
 const { authMiddleware, logMiddleware } = require('./bot/middleware');
 const { registerCommands } = require('./bot/commands');
 const { registerVoiceHandler, registerTextAIHandler } = require('./bot/voice');
+const { initScheduler } = require('./bot/scheduler');
 
 // Validação de variáveis de ambiente
 if (!process.env.TELEGRAM_BOT_TOKEN) {
@@ -36,6 +37,9 @@ registerVoiceHandler(bot);
 // Registrar handler de texto inteligente (conversa livre com IA)
 // IMPORTANTE: deve ficar DEPOIS dos comandos para não interceptar /comandos
 registerTextAIHandler(bot);
+
+// Inicializa jobs agendados (como o resumo de 7am)
+initScheduler(bot);
 
 // Tratamento de erros
 bot.catch((err, ctx) => {
