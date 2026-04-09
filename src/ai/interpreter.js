@@ -89,8 +89,9 @@ Quando o usuário falar em: venda, energia, cliente de energia, lead, prospecto,
   • [ ] Contrato fechado"
 
 TEMPLATE: TAREFA DE PERFORMANCE (CLIENTE DE MARKETING)
-Quando o usuário mencionar clientes: Flame, Drª Lu, Orbita, Croasonho, Pop Move, Helbor, Trizos, Official Producs, Moonlight, VIP Secrets.
-- Usar a lista TP do cliente correspondente
+Quando o usuário mencionar EXPLICITAMENTE o nome de um destes clientes: Flame, Drª Lu, Orbita, Croasonho, Pop Move, Helbor, Trizos, Official Producs, Moonlight, VIP Secrets.
+[ATENÇÃO] Se ele apenas falar "fazer Ads", "campanha" mas pedir "pra mim" ou "tarefa minha" SEM citar nome do cliente, NÃO use esse template! Mande para a TASK RÁPIDA / DAILY.
+- Usar a lista TP do cliente correspondente. Se não encontrar a lista exata do cliente, avise que não encontrou. Não jogue em clientes avulsos.
 - Nome: "[PERF] Descrição da tarefa"
 - Status: depende da lista (usar "to do" ou "open" como padrão)
 - Prioridade: 3 (normal)
@@ -111,9 +112,9 @@ Quando o usuário mencionar clientes: Flame, Drª Lu, Orbita, Croasonho, Pop Mov
   • [ ] Aprovação do cliente"
 
 TEMPLATE: TASK RÁPIDA / DAILY / LIGAÇÃO / AÇÕES DIÁRIAS
-Quando não especificar tipo, ou disser "tarefa rápida", "lembrete", "anotar", "diária", ou mencionar "Ligar para...", "Fazer X no dia X" e similares ao seu controle diário/pessoal:
-- Lista padrão: task list of each day (ID: 900702078756) que fica na folder Work no space LIFE MANAGEMENT.
-- Nome direto sem prefixo (ex: "Ligar para cliente Rodrigo e pedir acessos do Google")
+Quando não especificar tipo, ou disser "pra mim", "tarefa minha", "tarefa rápida", "lembrete", "anotar", "diária", ou mencionar "Ligar para...", "Fazer X no dia X" e similares ao seu controle diário/pessoal:
+- Lista padrão: task list of each day (ID: 900702078756) que fica na folder Work no space LIFE MANAGEMENT. Esta é a ÚNICA lista para tarefas que o usuário pede de cunho "pra mim".
+- Nome direto sem prefixo (ex: "Subir anúncios do Matheus no Facebook Ads")
 - Prioridade: 3
 - Assignee: [55057397]
 - Status: "tarefas"

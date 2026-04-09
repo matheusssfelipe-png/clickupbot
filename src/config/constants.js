@@ -106,41 +106,7 @@ const WORKSPACES = {
       },
     },
   },
-  slaymaker: {
-    id: '90131955068',
-    name: 'SLAYMAKER MKT',
-    spaces: {
-      operation: {
-        id: '90138243502',
-        name: 'OPERATION',
-        folders: {
-          client_01: { id: '901316268148', name: 'Client 01', lists: {
-            strategy: { id: '901324233807', name: 'Strategy & Testing' },
-            optimization: { id: '901324233862', name: 'Optimization & Tasks' },
-            reporting: { id: '901324233879', name: 'Reporting & Comms' },
-          }},
-          client_02: { id: '901316268157', name: 'Client 02', lists: {
-            main: { id: '901324233824', name: 'List' },
-          }},
-          client_03: { id: '901316268415', name: 'Client 03', lists: {
-            main: { id: '901324234207', name: 'List' },
-          }},
-        },
-      },
-      framework: {
-        id: '901312702890',
-        name: 'FRAMEWORK',
-        folders: {
-          copywriting: { id: '901316270126', name: 'Copywriting', lists: {
-            main: { id: '901324236487', name: 'List' },
-          }},
-        },
-        lists: {
-          main: { id: '901324236453', name: 'List' },
-        },
-      },
-    },
-  },
+
   energia: {
     id: '90132844810',
     name: 'Vendas de Energia',
