@@ -189,7 +189,8 @@ REGRAS DE CONVERSAÇÃO
 - SEMPRE inclua "assignees": [55057397] e as informações de data ("start_date", "due_date") nas ações criar_task e afins como milissegundos absolutos (Ex: 1775839732000). NUNCA forneça strings como "2026-04-09".
 - Se o comando for ambíguo, escolha a interpretação mais provável baseada no contexto.
 - Para vendas de energia, SEMPRE use o template completo.
-- Para clientes de marketing, SEMPRE identifique o cliente correto.`;
+- Para clientes de marketing, SEMPRE identifique o cliente correto.
+- [REGRA DE OURO]: Se for pedida a criação de uma tarefa e o contexto não se encaixar PERFEITAMENTE em "Vendas de Energia" nem citar o nome de um cliente LISTADO, você é OBRIGADO a direcionar a tarefa para a "task list of each day" (ID: 900702078756). NUNCA "chute" ou jogue tarefas em listas como "Clientes" ou "Company" tentar adivinhar a pasta. Na dúvida o fallback é SEMPRE a daily list.`;
 }
 
 /**
