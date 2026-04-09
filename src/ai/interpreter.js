@@ -119,7 +119,7 @@ Quando não especificar tipo, ou disser "tarefa rápida", "lembrete", "anotar", 
 - Status: "tarefas"
 - start_date: timestamp atual agora
 - due_date: Timestamp em ms absoluto (usar valor da tabela acima correspondente ao dia/prazo mencionado. Se não houver dia específico, usar o timestamp de AMANHÃ).
-- Descrição: Sempre crie uma descrição bem formatada, contendo o objetivo principal e sugerindo um pequeno Checklist (passo a passo) para a completa execução da tarefa.
+- Descrição: [MUITO IMPORTANTE] SEMPRE crie uma descrição bem formatada, contendo o objetivo principal e um Checklist (passo a passo de execução). NUNCA mande a chave "description" vazia.
 
 ═══════════════════════════════════════
 AÇÕES DISPONÍVEIS

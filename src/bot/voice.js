@@ -183,7 +183,9 @@ async function executeAction(action, ctx) {
       action.created_task_id = task.id;
       action.created_task_name = task.name;
 
-      return `✅ <b>Task criada!</b>\n\n📋 <b>${msg.escapeHtml(task.name)}</b>${statusStr}${assigneeStr}${startStr}${dueStr}${descPreview}\n🆔 <code>${task.id}</code>\n🔗 <a href="${url}">Abrir no ClickUp</a>`;
+      const listStr = task.list?.name ? `\n📁 <b>Lista:</b> ${msg.escapeHtml(task.list.name)}` : '';
+
+      return `✅ <b>Task criada!</b>\n\n📋 <b>${msg.escapeHtml(task.name)}</b>${listStr}${statusStr}${assigneeStr}${startStr}${dueStr}${descPreview}\n🆔 <code>${task.id}</code>\n🔗 <a href="${url}">Abrir no ClickUp</a>`;
     }
 
     case 'mover_task': {
